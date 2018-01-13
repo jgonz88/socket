@@ -1,14 +1,14 @@
 var net = require('net');
 
 
-var request = require('request');
-var options = {
-    host: 'api.dev',
-    port: 80,
-    path: '/log',
-    method: 'POST'
-    //json: true
-};
+// var request = require('request');
+// var options = {
+//     host: 'api.dev',
+//     port: 80,
+//     path: '/log',
+//     method: 'POST'
+//     //json: true
+// };
 
 var clients = [];
 
