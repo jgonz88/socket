@@ -1,5 +1,5 @@
 var net = require('net');
-
+var port = process.env.PORT || 1337;
 
 // var request = require('request');
 // var options = {
@@ -42,4 +42,6 @@ var server = net.createServer(function(socket) {
 
 });
 
-server.listen(1337, '127.0.0.1');
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
